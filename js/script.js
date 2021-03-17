@@ -59,11 +59,8 @@ function game(playerSelect) {
                 draw.removeAttribute("class", "plus_one");
             }, 800);
         }
-
-
     
 // ANIMATIONS
-
     player.classList.add("animated","bounce","color");
     computer.classList.add("animated","bounce","color");
 
@@ -71,18 +68,16 @@ function game(playerSelect) {
         player.classList.remove("animated","bounce","color");
         computer.classList.remove("animated","bounce","color");
     }, 1000);
-
-
 };
 
 // reset score
-    document.getElementById('reset').onclick = function()
-    {
-        wonScore = lostScore = drawScore =0;
-        won.innerHTML = wonScore;
-        lost.innerHTML = lostScore;
-        draw.innerHTML = drawScore ;  
-    };
+document.getElementById('reset').onclick = function()
+{
+  wonScore = lostScore = drawScore =0;
+  won.innerHTML = wonScore;
+  lost.innerHTML = lostScore;
+  draw.innerHTML = drawScore ;  
+};
 
 
 
