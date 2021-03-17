@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>GAME | Rock-Paper-Scissors</title>
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!--BULMA CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma-rtl.min.css">
+
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/f657d20d04.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--<a href="https://www.frontendmentor.io/solutions/paper-rock-scissors-game-Bh8iEczeR">https://www.frontendmentor.io/solutions/paper-rock-scissors-game-Bh8iEczeR</a><br><br><br>-->
+
+    <header class="columns is-centered mt-5">
+        <div class="column is-8 is-primary">
+          Let's <strong>PLAY</strong>
+          <p> ROCK - PAPER - SCISSORS</p>
+        </div>
+    </header>    
+
+    <article class="columns is-centered mt-5 ">
+        <div  class="column  is-1 mx-4  table_score">
+          WON
+          <p id="won" class="" >0</p>
+        </div>
+
+
+        <div id="blabla2" class="column is-1  mx-4 table_score">
+          DRAW
+          <p id="draw">0</p>
+        </div>
+
+        <div id="blabla3" class="column is-1 mx-4 table_score">
+          LOST
+          <p id="lost">0</p>
+        </div>
+
+        <button class="column is-1 mx-2 table_score" id="reset">
+          RESET
+          <p> SCORE</p>
+        </button>
+    </article>   
+
+    <main>
+
+      <div class="columns is-centered mt-3">
+        <div onclick="game(this.id)" class="column is-2 is-primary  has-text-centered player_select" id="rock">
+          <i class="fas fa-hand-rock"></i>
+        </div>
+      </div>
+
+
+      <div class="columns is-centered mt-3">
+        <div onclick="game(this.id)" class="column  is-2  mx-4 has-text-centered player_select" id="paper">
+          <i class="fas fa-hand-paper"></i>
+        </div>
+
+
+        <div onclick="game(this.id)" class="column is-2  mx-4 has-text-centered player_select" id="scissors">
+          <i class="fas fa-hand-scissors"></i>
+        </div>
+      </div>
+
+
+
+    </main>
+
+
+    <article class="columns is-centered mt-5" >
+      <div class="column  is-2 bg-priamry pb-5 mx-4 has-text-centered" id="selections">
+        You select: 
+        <p id="player">What will you choose?</p>
+      </div>
+
+      <div class="column is-2 bg-priamry pb-5 mx-4 has-text-centered" id="selections_dva">
+        Computer select:
+        <p id="computer">What will computer choose?</p>
+      </div>
+
+  </article>
+
+<!--    JS    -->
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
